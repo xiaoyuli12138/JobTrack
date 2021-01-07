@@ -1,0 +1,39 @@
+
+{
+  "code": 0,
+  "msg": "",
+  "count": 100,
+  "data": [
+    {
+      "id": 1002,
+      "majorName": "信息与计算科学",
+      "createTime": "2001-12-12",
+      "remark": "无"
+    }, {
+      "id": 1004,
+      "majorName": "大数据专业",
+      "createTime": "2001-12-12",
+      "remark": "无"
+    }, {
+      "id": 1008,
+      "majorName": "网络工程",
+      "createTime": "2001-12-12",
+      "remark": "无"
+    }, {
+      "id": 1009,
+      "majorName": "网络工程",
+      "createTime": "2001-12-12",
+      "remark": "无"
+    }, {
+      "id": 1010,
+      "majorName": "数学与应用数学",
+      "createTime": "2001-12-12",
+      "remark": "无"
+    }, {
+      "id": 1016,
+      "majorName": "软件工程",
+      "createTime": "2001-12-12",
+      "remark": "无"
+    }
+  ]
+}

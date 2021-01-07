@@ -1,0 +1,49 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "ename": "北京柯蓝科技有限公司",
+      "eman": "刘海海",
+      "eteacher": "张三",
+      "showdate": "2019-05-26",
+      "maddress": "科技楼11层1"
+    },
+    {
+      "ename": "北京思特奇有限公司",
+      "eman": "刘海",
+      "eteacher": "李四",
+      "showdate": "2019-05-26",
+      "maddress": "科技楼10层1"
+    },
+    {
+      "ename": "大连华宇科技有限公司",
+      "eman": "刘四",
+      "eteacher": "王五",
+      "showdate": "2019-05-26",
+      "maddress": "科技楼11层1"
+    },
+    {
+      "ename": "成都银海软件科技有限公司",
+      "eman": "刘小花",
+      "eteacher": "张三",
+      "showdate": "2019-05-26",
+      "maddress": "科技楼11层1"
+    },
+    {
+      "ename": "山东国子科技有限公司",
+      "eman": "李四",
+      "eteacher": "张三",
+      "showdate": "2019-05-26",
+      "maddress": "科技楼10层1"
+    },
+    {
+      "ename": "山东国子科技有限公司",
+      "eman": "李广",
+      "eteacher": "张三",
+      "showdate": "2019-05-26",
+      "maddress": "科技楼10层1"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+
+{
+  "code": 0,
+  "msg": "",
+  "count": 100,
+  "data": [
+    {
+      "majorName": "网络工程",
+      "cno": "10022",
+      "period": "2017",
+      "joinDate": "2017-09-01",
+      "num": 40,
+      "classTeacher": "张三",
+      "counsellor": "李四"
+    },{
+      "majorName": "网络工程",
+      "cno": "10022",
+      "period": "2017",
+      "joinDate": "2017-09-01",
+      "num": 40,
+      "classTeacher": "张三",
+      "counsellor": "李四"
+    },{
+      "majorName": "网络工程",
+      "cno": "10022",
+      "period": "2017",
+      "joinDate": "2017-09-01",
+      "num": 40,
+      "classTeacher": "张三",
+      "counsellor": "李四"
+    },{
+      "majorName": "网络工程",
+      "cno": "10022",
+      "period": "2017",
+      "joinDate": "2017-09-01",
+      "num": 40,
+      "classTeacher": "张三",
+      "counsellor": "李四"
+    },{
+      "majorName": "网络工程",
+      "cno": "10022",
+      "period": "2017",
+      "joinDate": "2017-09-01",
+      "num": 40,
+      "classTeacher": "张三",
+      "counsellor": "李四"
+    },{
+      "majorName": "网络工程",
+      "cno": "10022",
+      "period": "2017",
+      "joinDate": "2017-09-01",
+      "num": 40,
+      "classTeacher": "张三",
+      "counsellor": "李四"
+    },{
+      "majorName": "网络工程",
+      "cno": "10022",
+      "period": "2017",
+      "joinDate": "2017-09-01",
+      "num": 40,
+      "classTeacher": "张三",
+      "counsellor": "李四"
+    },{
+      "majorName": "网络工程",
+      "cno": "10022",
+      "period": "2017",
+      "joinDate": "2017-09-01",
+      "num": 40,
+      "classTeacher": "张三",
+      "counsellor": "李四"
+    },{
+      "majorName": "网络工程",
+      "cno": "10022",
+      "period": "2017",
+      "joinDate": "2017-09-01",
+      "num": 40,
+      "classTeacher": "张三",
+      "counsellor": "李四"
+    }
+  ]
+}
