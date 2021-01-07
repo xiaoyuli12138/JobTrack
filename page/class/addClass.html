@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>添加班级</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../lib/layui-v2.5.5/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../css/public.css" media="all">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="layui-form layuimini-form">
+    <div class="layui-form-item" >
+        <label class="layui-form-label required">学校名称</label>
+        <div class="layui-input-block">
+            <select name="school" lay-filter="school" disabled>
+                <option value="">--请选择--</option>
+                <option value="0" selected>太原工业学院</option>
+                <option value="1" >太原科技大学</option>
+                <option value="2">太原理工大学</option>
+                <option value="3">中北大学</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item"  >
+        <label class="layui-form-label required" >院系名称</label>
+        <div class="layui-input-block">
+            <select name="department" lay-filter="department" disabled>
+                <option value="">--请选择--</option>
+                <option value="0" selected>计算机工程系</option>
+                <option value="1" >理学系</option>
+                <option value="2">电子工程系</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item"  >
+        <label class="layui-form-label required">专业名称</label>
+        <div class="layui-input-block">
+            <select name="major" lay-filter="major">
+                <option value="">--请选择--</option>
+                <option value="0" selected>计算机科技与技术</option>
+                <option value="1" >软件工程</option>
+                <option value="2">网络工程</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item"  >
+        <label class="layui-form-label required">班级编号</label>
+        <div class="layui-input-block">
+            <input type="text" name="className" lay-verify="required"  placeholder="请输入班级编号" class="layui-input" >
+        </div>
+    </div>
+    <div class="layui-form-item"  >
+        <label class="layui-form-label required">入学日期</label>
+        <div class="layui-input-block">
+            <input type="text" name="joinDate" id="joinDate" lay-verify="date" placeholder="请选择入学日期" autocomplete="off" class="layui-input" readonly>
+        </div>
+    </div>
+    <div class="layui-form-item"  >
+        <label class="layui-form-label required">毕业日期</label>
+        <div class="layui-input-block">
+            <input type="text" name="endDate" id="endDate" lay-verify="date" placeholder="请选择毕业日期" autocomplete="off" class="layui-input" readonly>
+        </div>
+    </div>
+    <div class="layui-form-item"  >
+        <label class="layui-form-label required">班级人数</label>
+        <div class="layui-input-block">
+            <input type="number" name="classNo" lay-verify="required"  placeholder="请输入班级人数" class="layui-input" value="40">
+        </div>
+    </div>
+    <div class="layui-form-item"  >
+        <label class="layui-form-label required">班主任</label>
+        <div class="layui-input-block">
+            <input type="text" name="classTeacher" lay-verify="required"  placeholder="请输入班主任姓名" class="layui-input" >
+        </div>
+    </div>
+    <div class="layui-form-item"  >
+        <label class="layui-form-label required">班主任电话</label>
+        <div class="layui-input-block">
+            <input type="text" name="tel" lay-verify="required"  placeholder="请输入班主任电话" class="layui-input" >
+        </div>
+    </div>
+    <div class="layui-form-item"  >
+        <label class="layui-form-label required">辅导员</label>
+        <div class="layui-input-block">
+            <input type="text" name="counsellor" lay-verify="required"  placeholder="请输入辅导员姓名" class="layui-input" >
+        </div>
+    </div>
+    <div class="layui-form-item"  >
+        <label class="layui-form-label required">辅导员电话</label>
+        <div class="layui-input-block">
+            <input type="text" name="telephone" lay-verify="required"  placeholder="请输入辅导员电话" class="layui-input" >
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text"  >
+        <label class="layui-form-label">备注信息</label>
+        <div class="layui-input-block">
+            <textarea name="remark" class="layui-textarea" placeholder="请输入备注信息"></textarea>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn layui-btn-normal" lay-submit lay-filter="saveBtn">创建班级</button>
+            <button type="reset" class="layui-btn layui-btn-primary" >重置信息</button>
+        </div>
+    </div>
+</div>
+<script src="../../lib/layui-v2.5.5/layui.js" charset="utf-8"></script>
+<script>
+    layui.use(['form','laydate'], function () {
+        var form = layui.form,
+            layer = layui.layer,
+            laydate = layui.laydate,
+            $ = layui.$;
+
+        // 入学日期
+        laydate.render({
+            elem: '#joinDate',
+            max: maxDate()
+        });
+       // 毕业日期
+        laydate.render({
+            elem: '#endDate'
+        });
+        // 设置最大可选的日期
+        function maxDate() {
+            var now = new Date();
+            return now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + now.getDate();
+        }
+
+        //监听提交
+        form.on('submit(saveBtn)', function (data) {
+            var index = layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            }, function () {
+
+                // 关闭弹出层
+                layer.close(index);
+
+                var iframeIndex = parent.layer.getFrameIndex(window.name);
+                parent.layer.close(iframeIndex);
+
+            });
+
+            return false;
+        });
+
+    });
+</script>
+</body>
+</html>
